@@ -1,9 +1,11 @@
 # 3D Terrain with three.js #
- ## Introduction ##
+## Setting up the scene ##
+ 
  Here I'm to show you a quick and fun way generate terrain in three.js. We will start by creating a plane and applying a non-shiny material to it. Next, we will add some outdoor lighting and a blue background for the sky. We will then apply a noise function to each vertex of the plane's geometry in order to elevate it. Finally we'll smooth out our terrain wiht a subdivider tool
 Let's get started! 
     
- ## Setting up the scene ##
+## Setting up the scene ##
+ 
  I've set up a starting point for this tutorial adapted from a boilerplate I use to experiment with three.js, so that we can start creating straight away! 
   First, download the source files from github: 
   ```bash
