@@ -4,7 +4,7 @@ var webpack = require('webpack');
 var webpackConfigFile = require('./webpack.config.js');
 var WebpackDevServer = require("webpack-dev-server");
 
-gulp.task('default', ["webpack", "css","html"]);
+gulp.task('default', ["css", "html", "webpack-dev-server"]);
 
 gulp.task("webpack", function (callback) {
     // run webpack
@@ -56,13 +56,11 @@ function getAllFilesFromFolder(dir) {
 
 gulp.task("webpack-dev-server", function (callback) {
 
-
     var config = Object.create(webpackConfigFile);
 
     new WebpackDevServer(webpack(config), {
-        watch:false,
-        hot:false,
-        contentBase: "out/",
+        hot: false,
+        contentBase: "./",
         publicPath: config.output.publicPath,
         stats: {
             colors: true
@@ -72,4 +70,3 @@ gulp.task("webpack-dev-server", function (callback) {
     });
     callback();
 });
-// server.close();
