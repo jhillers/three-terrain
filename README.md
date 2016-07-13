@@ -25,12 +25,13 @@ Let's get started!
   npm install  
   ```
   The last thing to set up it's our build job, it'll check for your changes and re-compile on the fly! 
+  
     ```bash
     gulp     
     ```
     
-  That's it! now we can open localhost a browser: 
- http://localhost:5000 []()
+  That's it! now we can open localhost in your favourite browser: 
+ <http://localhost:5000>
   
   You should see an empty screen with a blue background. Let's take a quick look at the constructor in src/app.js. 
   ```javascript
