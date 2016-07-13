@@ -26,9 +26,9 @@ Let's get started!
   ```
   The last thing to set up it's our build job, it'll check for your changes and re-compile on the fly! 
   
-    ```bash
-    gulp     
-    ```
+  ```bash
+  gulp  
+  ```
     
   That's it! now we can open localhost in your favourite browser: 
  <http://localhost:5000>
